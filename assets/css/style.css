@@ -1,0 +1,523 @@
+h1, h2.h3, h4, h5, h6, p, a, input, table, li, ul, ol, button, form {
+  padding: 0;
+  margin: 0; }
+
+body {
+  overflow-x: hidden;
+  height: auto; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+img {
+  width: 100%; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0; }
+
+@font-face {
+  font-family: "HKGrotesk-Black";
+  src: url("../HKGrotesk-Black.eot");
+  src: url("../fonts/HKGrotesk-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Black.woff") format("woff"), url("../fonts/HKGrotesk-Blackt.ttf") format("truetype"), url("../fonts/HKGrotesk-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+  header .main-head .flex {
+    justify-content: space-between; }
+  header .main-head .left .logo {
+    margin-right: 80px; }
+  header .main-head .left .menu span, header .main-head .left .menu .closebtn {
+    display: none; }
+  header .main-head .left .menu li {
+    display: inline-block; }
+    header .main-head .left .menu li:not(:last-child) {
+      margin-right: 30px; }
+    header .main-head .left .menu li a {
+      font: 15px/15px "HKGrotesk-Black";
+      color: #ffff;
+      font-weight: 400; }
+  header .main-head .right {
+    width: 23.7%; }
+    header .main-head .right .flex {
+      justify-content: space-between; }
+    header .main-head .right a {
+      display: inline-block; }
+      header .main-head .right a:nth-of-type(2) {
+        width: 80px;
+        color: #fff;
+        font: 15px/15px "HKGrotesk-Black";
+        text-align: center;
+        border: 1px solid #2B83EA;
+        padding: 13px 0; }
+      header .main-head .right a:last-child {
+        width: 115px;
+        color: #2B83EA;
+        background-color: #fff;
+        text-align: center;
+        font: 15px/15px "HKGrotesk-Black";
+        padding: 13px 0; }
+
+.main-content .banner {
+  position: relative; }
+  .main-content .banner .bg {
+    position: relative; }
+  .main-content .banner .content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25%; }
+    .main-content .banner .content .flex {
+      align-items: flex-start;
+      justify-content: space-between; }
+    .main-content .banner .content .left {
+      width: 37%; }
+      .main-content .banner .content .left h3 {
+        font: 40px/45px "HKGrotesk-Black";
+        color: #ffff;
+        margin-bottom: 40px; }
+      .main-content .banner .content .left p {
+        font: 18px/28px "HKGrotesk-Black";
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 20px; }
+      .main-content .banner .content .left a {
+        width: 125px;
+        display: inline-block;
+        color: #ffff;
+        background: #2783F3;
+        text-align: center;
+        font: 15px/18px "HKGrotesk-Black";
+        padding: 14px 0; }
+    .main-content .banner .content::after {
+      content: url(../images/Group\ 5.png);
+      position: absolute;
+      left: 9%;
+      bottom: -167px; }
+.main-content .product .left {
+  width: 50%; }
+  .main-content .product .left ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0;
+    height: auto !important;
+    margin: 0 auto; }
+  .main-content .product .left li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer; }
+    .main-content .product .left li img {
+      width: 65%;
+      display: block;
+      margin: 0 auto; }
+  .main-content .product .left img {
+    display: block;
+    height: auto;
+    width: unset; }
+  .main-content .product .left .lSAction > .lSPrev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../images/left-arr.png) no-repeat center center;
+    background-color: #F4F6F6;
+    left: 20px; }
+  .main-content .product .left .lSAction > .lSNext {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../images/right-arr.png) no-repeat center center;
+    background-color: #F4F6F6;
+    right: 50px; }
+  .main-content .product .left .lSSlideOuter .lSPager.lSGallery img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.24); }
+.main-content .product .right img {
+  width: auto; }
+.main-content .product .right .title h4 {
+  font: 40px/45px "HKGrotesk-Black";
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 25px; }
+.main-content .product .right .title p {
+  font: 20px/25px "HKGrotesk-Black";
+  color: #4F5659;
+  margin-bottom: 30px; }
+.main-content .product .right .rate {
+  margin-bottom: 80px; }
+  .main-content .product .right .rate span {
+    color: #202324;
+    font: 16px/18px "HKGrotesk-Black"; }
+.main-content .product .right .colours {
+  margin-bottom: 30px; }
+  .main-content .product .right .colours .flex {
+    flex-wrap: wrap; }
+  .main-content .product .right .colours h6 {
+    font: 12px/12px "HKGrotesk-Black";
+    color: #939C9F;
+    margin-bottom: 15px; }
+  .main-content .product .right .colours .blks {
+    width: 23%;
+    border: 1px solid #D8E0E2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    height: 100%;
+    min-height: 60px;
+    max-height: 60px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end; }
+    .main-content .product .right .colours .blks span {
+      display: block;
+      width: 100%;
+      font: 10px/14px "HKGrotesk-Black";
+      color: #ffff;
+      border-radius: 6px 6px 0 0;
+      padding: 2px; }
+    .main-content .product .right .colours .blks p {
+      font: 13px/15px "HKGrotesk-Black";
+      color: #000;
+      padding: 4px 10px;
+      justify-content: center;
+      display: flex;
+      align-items: center; }
+    .main-content .product .right .colours .blks:first-child span {
+      background: #DE742D; }
+    .main-content .product .right .colours .blks:nth-of-type(2) span {
+      background: #A07EDC; }
+.main-content .product .right .quantity {
+  margin-bottom: 30px; }
+  .main-content .product .right .quantity h6 {
+    font: 12px/12px "HKGrotesk-Black";
+    color: #939C9F;
+    margin-bottom: 15px; }
+  .main-content .product .right .quantity a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 50px;
+    background: #EDF1F2;
+    font: 16px/18px "HKGrotesk-Black";
+    color: #8CA4AB;
+    border-radius: 6px; }
+  .main-content .product .right .quantity span {
+    font: 16px/18px "HKGrotesk-Black";
+    color: #000;
+    padding: 0 15px;
+    display: inline-block; }
+.main-content .product .right .pay {
+  margin-bottom: 20px; }
+  .main-content .product .right .pay a {
+    display: block;
+    text-align: center;
+    font: 20px/23px "HKGrotesk-Black";
+    color: #ffff;
+    background: #00BA74;
+    padding: 25px 0;
+    border-radius: 2px; }
+    .main-content .product .right .pay a img {
+      padding-right: 10px;
+      vertical-align: top; }
+  .main-content .product .right .pay .opt {
+    margin-bottom: 25px; }
+  .main-content .product .right .pay p {
+    padding-left: 40px; }
+    .main-content .product .right .pay p img:first-child {
+      background: lightgreen;
+      padding: 5px;
+      border-radius: 10px;
+      margin-right: 2px; }
+  .main-content .product .right .pay [type="radio"]:checked,
+  .main-content .product .right .pay [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px; }
+  .main-content .product .right .pay [type="radio"]:checked + label,
+  .main-content .product .right .pay [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+    font: 16px/18px "HKGrotesk-Black";
+    margin-bottom: 10px; }
+    .main-content .product .right .pay [type="radio"]:checked + label span,
+    .main-content .product .right .pay [type="radio"]:not(:checked) + label span {
+      color: #00BA74; }
+  .main-content .product .right .pay [type="radio"]:checked + label:before,
+  .main-content .product .right .pay [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00BA74;
+    border-radius: 100%;
+    background: #fff; }
+  .main-content .product .right .pay [type="radio"]:not(:checked) + label:before {
+    border: 2px solid #D6DFE1; }
+  .main-content .product .right .pay [type="radio"]:checked + label:after,
+  .main-content .product .right .pay [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: #00BA74;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .main-content .product .right .pay [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  .main-content .product .right .pay [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+.main-content .product .lists li {
+  color: #34393A;
+  background: url(../images/tick.png) no-repeat left top 5px;
+  font: 16px/24px "HKGrotesk-Black";
+  padding-left: 30px; }
+  .main-content .product .lists li:not(:last-child) {
+    margin-bottom: 8px; }
+.main-content .product .lists p {
+  background: url(../images/truck.png) no-repeat left top 5px;
+  font: 16px/24px "HKGrotesk-Black";
+  padding-left: 30px;
+  color: #545C5F;
+  margin-top: 25px; }
+
+@media screen and (max-width: 1120px) {
+  .container {
+    padding: 0 20px; }
+
+  .main-content .banner .content::after {
+    bottom: -70px; }
+
+  .main-content .product .right .title h4 {
+    padding-top: 50px; } }
+@media screen and (max-width: 991px) {
+  .main-content .banner .bg img {
+    height: 100%;
+    max-height: 670px;
+    min-height: 670px;
+    object-fit: cover; }
+
+  .main-content .banner .content .left {
+    width: 65%;
+    padding-right: 30px; }
+
+  .main-content .banner .content::after {
+    bottom: -245px; }
+
+  header .main-head .left .logo {
+    margin-right: 20px; }
+
+  header .main-head .left .menu li:not(:last-child) {
+    margin-right: 16px; }
+
+  header .main-head .right {
+    width: 29.7%; }
+
+  header .main-head .right a:last-child {
+    width: 90px; }
+
+  .main-content .product .right .rate {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 768px) {
+  header .main-head .left .menu .closebtn, header .main-head .left .menu span {
+    display: block; }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #03062F;
+    overflow-x: hidden;
+    transition: 0.5s; }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px; }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1; }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 60px; }
+
+  header .main-head .left .menu li {
+    display: block;
+    margin-right: 0;
+    padding-left: 30px;
+    margin-bottom: 15px; }
+
+  header .main-head .left .logo {
+    margin-right: 40px; }
+
+  header .main-head .right {
+    width: 40%; }
+
+  header .main-head .left .menu span {
+    color: #ffff; }
+
+  .main-content .banner .content {
+    top: 18%; }
+
+  .main-content .banner .content .flex {
+    flex-direction: column; }
+
+  .main-content .banner .content .left {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 50px; }
+
+  .main-content .banner .content .right {
+    width: 100%;
+    text-align: center; }
+    .main-content .banner .content .right img {
+      width: 55%; }
+
+  .main-content .banner .bg img {
+    max-height: 935px;
+    min-height: 935px; }
+
+  .main-content .banner .content::after {
+    content: unset; }
+
+  .main-content .product .right {
+    width: 100%; }
+
+  .main-content .product .left {
+    width: 100%;
+    margin-bottom: 30px; }
+
+  .main-content .product .flex {
+    flex-direction: column; }
+
+  .main-content .product .right .colours .flex, .main-content .product .right .quantity .flex {
+    flex-direction: revert; }
+
+  header .main-head .left .menu li a {
+    font: 18px/20px "HKGrotesk-Black"; } }
+@media screen and (min-width: 768px) {
+  .menu .overlay {
+    width: 100% !important; } }
+@media screen and (max-width: 640px) {
+  header .main-head .right {
+    width: 50%; }
+
+  .main-content .banner .content .left h3 {
+    font: 30px/39px "HKGrotesk-Black";
+    margin-bottom: 30px; }
+
+  .main-content .banner .content {
+    top: 13%; }
+
+  .main-content .banner .bg img {
+    max-height: 820px;
+    min-height: 820px; }
+
+  .main-content .product .left li img {
+    width: 40%; }
+
+  .main-content .product .right .title h4 {
+    padding-top: 30px; }
+
+  .main-content .product .right .title h4 {
+    font: 30px/35px "HKGrotesk-Black"; }
+
+  .main-content .product .right .title {
+    text-align: center; } }
+@media screen and (max-width: 480px) {
+  header .main-head .flex {
+    flex-direction: column; }
+
+  header .main-head .left .flex, header .main-head .right .flex {
+    flex-direction: row; }
+
+  header .main-head .left {
+    width: 100%;
+    margin-bottom: 25px; }
+
+  header .main-head .right {
+    width: 80%; }
+
+  header .main-head .right a:last-child, header .main-head .right a:nth-of-type(2) {
+    font: 14px/15px "HKGrotesk-Black";
+    padding: 8px 0; }
+
+  .main-content .banner .content {
+    top: 20%; }
+
+  .main-content .product .left li img {
+    width: 100%; }
+
+  .main-content .product .left .lSAction > .lSPrev, .main-content .product .left .lSAction > .lSNext {
+    width: 35px;
+    height: 35px; }
+
+  .main-content .product .left .lSAction > .lSNext {
+    right: 0; }
+
+  .main-content .product .left .lSAction > .lSPrev {
+    left: 0; }
+
+  .main-content .product .right .colours .blks {
+    width: 48%; }
+
+  .main-content .product .right .pay a {
+    font: 17px/23px "HKGrotesk-Black";
+    padding: 14px 0; }
+
+  .container {
+    padding: 0 10px; } }
+
+/*# sourceMappingURL=style.css.map */
